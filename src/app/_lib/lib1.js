@@ -1,0 +1,1 @@
+// in this folder  we can put all the common code that we want to share between different pages this does not create a route even when you create a page.js and we can import the code from this file in any page we want to use it in. for example we can create a function that returns a string and we can import it in any page we want to use it in.
