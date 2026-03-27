@@ -1,4 +1,6 @@
-export default function products() {
+
+
+export default function products({params}) {
   return (
     <main className="container mx-auto px-4 py-8 secodary">
       <h1>Products</h1>

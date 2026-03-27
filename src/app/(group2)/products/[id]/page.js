@@ -1,4 +1,12 @@
 import { notFound } from "next/navigation";
+
+export const generateMetadata = async ({params}) => {
+    const {id} = await params;
+    return {
+        title: `Product ${id}`,
+        description: `This is the description for product ${id}.`
+    };
+};
 export default  async function detailProduct({ params }) {
 
     const { id } =  await params;
