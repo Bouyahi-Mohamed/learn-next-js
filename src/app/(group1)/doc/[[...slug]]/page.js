@@ -1,3 +1,7 @@
+export const metadata = {
+    title: "Documentation",
+    description: "This is the documentation page of my application.",
+  };
 export default async function documentation({ params }) {
     const { slug } =  await params;
     console.log(slug);
