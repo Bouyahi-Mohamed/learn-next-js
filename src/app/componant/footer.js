@@ -1,7 +1,7 @@
-export default function FooterApp(){
+export default function FooterApp({ name }) {
 
-    return(
-        <footer style={{ backgroundColor: "orange", padding: "1rem" }}>
+    return (
+        <footer style={{ backgroundColor: name, padding: "1rem" }}>
           <p>Footer</p>
         </footer>
     )
