@@ -1,9 +1,8 @@
-export default function layout({childern}){
-
-    return(
+export default function layout({ children }) {
+  return (
     <>
-        {childern}
-        <h1> this is my nest layout </h1>
+      <h1> this is my nest layout </h1>
+      {children}
     </>
-    )
+  );
 }
