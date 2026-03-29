@@ -1,17 +1,15 @@
+'use client';
+
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import {use} from 'react';
 
-export const generateMetadata = async ({params,searchParams}) =>   {
-    const {id} = await params;
-    return {
-        title: `Product ${id}`,
-        description: `This is the description for product ${id}.`
-    };
-};
-export default  async function detailProduct({ params, searchParams }) {
+//import use 
 
-    const { id} =  await params;
-    const {lang} = await searchParams;
+export default   function detailProducts({ params, searchParams }) {
+
+    const { id} =   use(params);
+    const {lang} =  use(searchParams);
     console.log(id);
     if(parseInt(id) > 10) {
         notFound();
